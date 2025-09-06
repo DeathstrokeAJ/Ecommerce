@@ -1,6 +1,6 @@
 import { getToken } from '../utils/auth';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001/api';
+const API_URL = import.meta.env.VITE_API_URL || 'https://ecommercestoretest.vercel.app/api';
 
 const makeRequest = async (url: string, options: RequestInit = {}) => {
   const token = getToken();
