@@ -28,6 +28,7 @@ export const register = async (req, res) => {
       user: { id: docRef.id, name, email }
     });
   } catch (error) {
+    console.error('Register error:', error);
     res.status(500).json({ error: 'Server error' });
   }
 };
@@ -57,6 +58,7 @@ export const login = async (req, res) => {
       user: { id: userDoc.id, name: userData.name, email: userData.email }
     });
   } catch (error) {
+    console.error('Login error:', error);
     res.status(500).json({ error: 'Server error' });
   }
 };
