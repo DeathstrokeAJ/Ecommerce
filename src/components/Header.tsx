@@ -21,7 +21,7 @@ export const Header: React.FC<HeaderProps> = ({ currentPage, onPageChange, cartI
       <div className="max-w-7xl mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-8">
-            <h1 className="text-2xl font-bold text-gray-900">E-Shop</h1>
+            <h1 className="text-2xl font-bold text-gray-900">TestHub</h1>
             <nav className="flex space-x-6">
               <button
                 onClick={() => onPageChange('products')}
